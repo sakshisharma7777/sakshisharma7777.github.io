@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <title>Form</title>
+        <link rel="stylesheet" href="css/form.css" >
+    </head>
+    <body>
+        <div class="wrapper">  
+            <h1 class="header">Registration form</h1>  
+            <p class="headerText">ENTER YOUR DETAILS</p>  
+           <form>  
+            <div class="inputWrapper">  
+             <label for="name">Username</label>  
+             <input id="name" type="text" autocomplete="off" required>  
+            </div>  
+            <div class="inputWrapper">  
+                <label for="password">Password</label>  
+                <input id="password" type="password" required>  
+               </div>  
+               <div class="inputWrapper">  
+                <label for="repeatPassword">Confirm password</label>  
+                <input id="repeatPassword" type="password" required>  
+               </div>  
+               <div class="inputWrapper">  
+                <label for="email">E-mail</label>  
+                <input id="email" type="email" autocomplete="off" required>  
+               </div>  
+               <div class="inputWrapper">  
+                <label for="number">Phone No</label>  
+                <input id="email" type="number" autocomplete="off" required>  
+               </div>  
+               <div class="inputWrapper">  
+                <label for="number">Gender</label>   </div>
+                <label><input value="onsite" type="radio" name="training"  />Male</label>
+                <label><input value="onsite" type="radio" name="training"  />Female</label><br><br>
+                
+               
+            <div class="inputWrapper">  
+                <label for="name">Qualification</label> 
+            </div>  
+            <select id="name" class="inputWrapper" ng-model="student.gender">
+                <option value="Driving">FYBBA(CA)</option>
+                <option value="Arts">SYBBA(CA)</option>
+                <option value="Typing">TYBBA(CA)</option>
+                <option value="Guitar">FYBBA</option>
+                <option value="bba">SYBBA</option>
+                <option value="TYBBA">TYBBA</option>
+                <option value="FYBCS">FYBCS</option>
+                <option value="SYBCS">SYBCS</option>
+                <option value="TYBCS">TYBCS</option>
+            </select>
+
+            <div class="inputWrapper">  
+                <label for="name">Hobbies</label> 
+            </div>  
+            <div class="">
+            <label><input type="checkbox" ng-model="student.maths" />Driving</label>
+            <label><input type="checkbox" ng-model="student.maths" />Gaming</label>
+            <label><input type="checkbox" ng-model="student.maths" />Cooking</label>
+            <label><input type="checkbox" ng-model="student.maths" />Editing</label>
+            </div><br>
+            <br>
+            <br>
+              
+            
+           
+            <button type="submit" class="submitButton">Register</button>  
+           </form>  
+          </div>
+    </body>
+</html>
